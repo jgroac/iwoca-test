@@ -31,7 +31,7 @@ describe('calculateTotalRepayments', () => {
             }]
         )
 
-        expect(totalRepayments).toEqual({ original: 10000, interest: 833, monthlyRepayment: 2583 })
+        expect(totalRepayments).toEqual({ original: 10000, interest: 833, monthlyRepayment: 10833 })
     })
 
     it('should throw if the given parameter is not an array', () => {

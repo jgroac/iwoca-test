@@ -13,7 +13,7 @@ const calculateTotalRepayments = (repaymentSchedule) => {
     return repaymentSchedule.reduce((totals, currentMonth) => {
         totals.original += currentMonth.original
         totals.interest += currentMonth.interest
-        totals.monthlyRepayment = currentMonth.monthlyRepayment
+        totals.monthlyRepayment += currentMonth.monthlyRepayment
 
         return totals
     }, totals)

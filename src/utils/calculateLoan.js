@@ -22,7 +22,7 @@ const calculateLoan = (
         throw new Error('All the parameters should be numbers');
     }
 
-    const months = [...Array(duration)].map((u, i) => i)
+    const months = [...Array(parsedDuration)].map((u, i) => i)
     const originalLoan = parsedAmount / parsedDuration;
     let residualAmount = parsedAmount
 
