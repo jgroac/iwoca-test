@@ -1,13 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to use it
 
-## Available Scripts
+### Quickstart
+
+Download or clone this repository into a directory of you choice.
+
+1.  yarn install
+2.  yarn start
+3.  open <http://localhost:3000>
+
+If you don't have yarnpkg, you can just use npm
+
+1.  npm install
+2.  npm start
+3.  open <http://localhost:3000>
+
+### How to run the tests:
+
+-   `yarn test`
+
+or if you don't have yarn you can use:
+
+-   `npm run test`
+
+## Technical Choices
+
+The first decision was use React specifically `create-react-app` to bootstrap an app quickly from the scratch, also i pretty experience on it so i decided that would be the best option if i wanna to finish the project quickly.
+
+As testing library jest and react-testing-library because i like its API and even i used `enzyme` a lot but enzyme feels hacky for test simple thing like fire events, make lookups for components or text in your components, etc.
+
+For UI i choose `antd` because give me enough's components to create a very nice layout and UI. So this decision allow me to focus more on the functionality instead of waste time using css or sass for create a nice UI.
+
+An i think the final great decision was to decouple the business logic in some functions that make it really easy to test and use, like the utilities function that make the actual work of calculate repayment schedule, and the other one for calculate the totals.
+
+## Missing Improvements
+
+-   Make the state persistent saving it in some place like local storage, or web storage.
+
+-   Add more test cases, mostly for the dumb components.
+
+## Others Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open <http://localhost:3000> to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
@@ -45,24 +83,26 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This section has moved here: <https://facebook.github.io/create-react-app/docs/code-splitting>
 
 ### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This section has moved here: <https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size>
 
 ### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This section has moved here: <https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app>
 
 ### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+This section has moved here: <https://facebook.github.io/create-react-app/docs/advanced-configuration>
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This section has moved here: <https://facebook.github.io/create-react-app/docs/deployment>
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: <https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
