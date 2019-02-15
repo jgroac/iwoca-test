@@ -1,11 +1,11 @@
 import React from 'react';
-import { render, waitForElement, cleanup, fireEvent } from 'react-testing-library';
-import CalculateLoanPage from './CalculateLoanPage';
+import { render, cleanup, fireEvent } from 'react-testing-library';
+import RepaymentCalculator from './RepaymentCalculator';
 
 
 afterEach(cleanup);
 
-describe('<CalculateLoanPage />', () => {
+describe('<RepaymentCalculator />', () => {
     let props;
 
     beforeEach(() => {
@@ -13,12 +13,12 @@ describe('<CalculateLoanPage />', () => {
     });
 
     it('should show no data when the inputs are empty', () => {
-        const { getByText } = render(<CalculateLoanPage {...props} />)
+        const { getByText } = render(<RepaymentCalculator {...props} />)
         expect(getByText('No Data')).toBeTruthy()
     });
 
     it('should render data the payment schedule when inputs has data', () => {
-        const { getByLabelText, getByText } = render(<CalculateLoanPage {...props} />)
+        const { getByLabelText, getByText } = render(<RepaymentCalculator {...props} />)
 
         const amountInput = getByLabelText('amount-input')
         const durationInput = getByLabelText('duration-input')

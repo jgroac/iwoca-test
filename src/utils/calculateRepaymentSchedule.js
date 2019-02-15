@@ -6,7 +6,7 @@
  * @param {Number} duration loan duration in months
  * @param {Number} rate interest rate
  */
-const calculateLoan = (
+const calculateRepaymentSchedule = (
     amount,
     duration,
     rate
@@ -40,4 +40,4 @@ const calculateLoan = (
     return schedule;
 }
 
-export default calculateLoan;
+export default calculateRepaymentSchedule;

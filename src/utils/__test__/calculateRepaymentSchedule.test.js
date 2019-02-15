@@ -1,7 +1,7 @@
 
-import calculateLoan from '../calculateLoan';
+import calculateLoan from '../calculateRepaymentSchedule';
 
-describe('calculateLoan', () => {
+describe('calculateRepaymentSchedule', () => {
     it('should throw a error if the params are not numbers', () => {
 
         expect(

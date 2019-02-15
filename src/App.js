@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Component } from 'react'
 import { Layout } from 'antd'
-import CalculateLoan from './screen/CalculateLoan'
+import RepaymentCalculator from './screen/RepaymentCalculator'
 
 const styleTitle = { color: 'white' }
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
           <h1 style={styleTitle}>Calculate Loan</h1>
         </Layout.Header>
         <Layout.Content style={{ backgroundColor: 'white' }}>
-          <CalculateLoan />
+          <RepaymentCalculator />
         </Layout.Content>
       </Layout>
     );

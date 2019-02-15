@@ -3,10 +3,10 @@ import { Row, Col } from 'antd'
 import FormControls from './components/FormControls'
 import PaymentSchedule from './components/PaymentSchedule'
 
-import calculateLoan from '../../utils/calculateLoan'
+import calculateRepaymentSchedule from '../../utils/calculateRepaymentSchedule'
 
 
-class CalculateLoanPage extends Component {
+class RepaymentCalculator extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,7 +26,7 @@ class CalculateLoanPage extends Component {
 
     render() {
         const { amount, duration, interestRate } = this.state
-        const paymentSchedule = calculateLoan(amount, duration, interestRate)
+        const paymentSchedule = calculateRepaymentSchedule(amount, duration, interestRate)
         return (
             <>
                 <FormControls
@@ -46,4 +46,4 @@ class CalculateLoanPage extends Component {
     }
 }
 
-export default CalculateLoanPage
+export default RepaymentCalculator
