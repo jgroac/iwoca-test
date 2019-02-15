@@ -1,26 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+import { Layout } from 'antd'
+import CalculateLoan from './screen/CalculateLoan'
 
+const styleTitle = { color: 'white' }
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Layout>
+        <Layout.Header>
+          <h1 style={styleTitle}>Calculate Loan</h1>
+        </Layout.Header>
+        <Layout.Content style={{ backgroundColor: 'white' }}>
+          <CalculateLoan />
+        </Layout.Content>
+      </Layout>
     );
   }
 }
